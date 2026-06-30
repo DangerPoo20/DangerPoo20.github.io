@@ -160,3 +160,62 @@ footer {
 .goals-list li {
     margin-bottom: .75rem;
 }
+/* ==========================
+   Contact Page
+========================== */
+
+.contact-page {
+    max-width: 800px;
+    margin: 3rem auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: .8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.socials-section {
+    margin-top: 3rem;
+}
+
+.socials-list {
+    list-style: none;
+    padding: 0;
+}
+
+.socials-list li {
+    margin-bottom: .75rem;
+}
+
+.socials-list a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.socials-list a:hover {
+    text-decoration: underline;
+}
