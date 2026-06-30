@@ -285,3 +285,48 @@ footer {
   color: #777;
   margin-top: 2rem;
 }
+/* =========================
+   ARTICLE PAGE STYLES
+========================= */
+
+.article-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  line-height: 1.8;
+}
+
+.article-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.article-meta {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.article-page h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.article-page p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.article-page hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+.article-page a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.article-page a:hover {
+  text-decoration: underline;
+}
