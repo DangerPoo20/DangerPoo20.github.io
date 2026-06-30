@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Affairs Analysis</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">GA Analysis</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="future-tools.html">Future Tools</a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Understanding global affairs through clear, research-based analysis.</h1>
+      <p>This site breaks down politics, economics, geography, and international relations for general readers.</p>
+      <div class="hero-buttons">
+        <a href="articles.html" class="btn">Explore Articles</a>
+        <a href="about.html" class="btn secondary">About This Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="container">
+      <h2>Find Articles</h2>
+      <input type="text" id="searchInput" placeholder="Search by title..." />
+
+      <div class="topic-buttons">
+        <button data-topic="All" class="topic-btn active">All Topics</button>
+        <button data-topic="Politics" class="topic-btn">Politics</button>
+        <button data-topic="Economics" class="topic-btn">Economics</button>
+        <button data-topic="Geography" class="topic-btn">Geography</button>
+        <button data-topic="International Relations" class="topic-btn">International Relations</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="articles-grid">
+    <div class="container" id="articlesContainer">
+
+      <div class="article-card" data-topic="Politics" data-title="Why the Strait of Hormuz Matters">
+        <img src="images/placeholder.png" alt="Article Image" />
+        <h3>Why the Strait of Hormuz Matters</h3>
+        <p>Geopolitical significance of global energy security.</p>
+      </div>
+
+      <div class="article-card" data-topic="Economics" data-title="How Global Supply Chains Work">
+        <img src="images/placeholder.png" alt="Article Image" />
+        <h3>How Global Supply Chains Work</h3>
+        <p>How goods move through the global economy.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2>Subscribe</h2>
+      <form>
+        <input type="email" placeholder="Your email" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>Research-based global analysis.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
