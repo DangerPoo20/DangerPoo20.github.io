@@ -83,3 +83,47 @@ footer {
     display: block;
   }
 }
+/* Logo */
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Clickable article cards */
+
+.article-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Placeholder cards */
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 260px;
+    background: #f7f7f7;
+    border: 2px dashed #cfcfcf;
+    text-align: center;
+}
+
+.placeholder-label h3 {
+    margin-bottom: .5rem;
+}
+
+.placeholder-label p {
+    color: #777;
+    margin: 0;
+}
+
+/* Article count */
+
+.article-count {
+    color: #666;
+    margin-top: .5rem;
+}
