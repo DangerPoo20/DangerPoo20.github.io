@@ -1,4 +1,5 @@
 # DangerPoo20.github.io
 theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+title: Why It Matters
+description: Unbiased, evidence-supported analysis on the world around you.
+
