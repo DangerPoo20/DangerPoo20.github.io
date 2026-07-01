@@ -385,13 +385,7 @@ footer {
   gap: 0.75rem;
 }
 
-/* dark mode button */
-.theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
+
 /* ===== DARK MODE ===== */
 
 body.dark {
@@ -421,14 +415,17 @@ body.dark a {
   color: #7ab7ff;
 }
 
-/* Toggle button */
 .theme-toggle {
   position: fixed;
   top: 12px;
   right: 12px;
-  padding: 0.5rem 0.7rem;
+  z-index: 1000;
+
+  font-size: 1.3rem;
+  cursor: pointer;
+
+  background: #eee;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
-  background: #eee;
+  padding: 0.5rem 0.7rem;
 }
