@@ -284,3 +284,46 @@ body.dark a {
   font-size: 1.3rem;
   cursor: pointer;
 }
+/* =========================
+   THANK YOU PAGE
+========================= */
+
+.thank-you {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.message-wrapper {
+  max-width: 450px;
+  background: #ffffff;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* override heading spacing just for this page */
+.thank-you h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.thank-you p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* make sure button looks consistent */
+.thank-you .btn {
+  display: inline-block;
+}
