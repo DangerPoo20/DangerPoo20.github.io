@@ -1,4 +1,6 @@
-// Mobile menu
+// =========================
+// MOBILE MENU
+// =========================
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
 
@@ -8,11 +10,13 @@ if (menuToggle && navLinks) {
   });
 }
 
-// Search
+// =========================
+// SEARCH (only runs if exists)
+// =========================
 const searchInput = document.getElementById("searchInput");
 const articleCards = document.querySelectorAll(".article-card");
 
-if (searchInput) {
+if (searchInput && articleCards.length > 0) {
   searchInput.addEventListener("input", () => {
     const query = searchInput.value.toLowerCase();
 
@@ -23,10 +27,12 @@ if (searchInput) {
   });
 }
 
-// Topic filter
+// =========================
+// TOPIC FILTER
+// =========================
 const topicButtons = document.querySelectorAll(".topic-btn");
 
-if (topicButtons.length > 0) {
+if (topicButtons.length > 0 && articleCards.length > 0) {
   topicButtons.forEach(btn => {
     btn.addEventListener("click", () => {
       topicButtons.forEach(b => b.classList.remove("active"));
@@ -35,32 +41,38 @@ if (topicButtons.length > 0) {
       const topic = btn.dataset.topic;
 
       articleCards.forEach(card => {
+        const cardTopic = card.dataset.topic;
+
         card.style.display =
-          topic === "All" || card.dataset.topic === topic ? "" : "none";
+          topic === "All" || cardTopic === topic ? "" : "none";
       });
     });
   });
 }
-// Dark mode toggle
+
+// =========================
+// DARK MODE TOGGLE
+// =========================
 const themeToggle = document.getElementById("themeToggle");
+
+function applyTheme(isDark) {
+  document.body.classList.toggle("dark", isDark);
+
+  if (themeToggle) {
+    themeToggle.textContent = isDark ? "☀️" : "🌙";
+  }
+
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+}
 
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark");
-
-    // optional: save preference
-    if (document.body.classList.contains("dark")) {
-      localStorage.setItem("theme", "dark");
-      themeToggle.textContent = "☀️";
-    } else {
-      localStorage.setItem("theme", "light");
-      themeToggle.textContent = "🌙";
-    }
+    const isDark = !document.body.classList.contains("dark");
+    applyTheme(isDark);
   });
+}
 
-  // load saved theme
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark");
-    themeToggle.textContent = "☀️";
-  }
+// load saved theme on every page
+if (localStorage.getItem("theme") === "dark") {
+  applyTheme(true);
 }
