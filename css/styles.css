@@ -13,7 +13,7 @@ body {
 }
 
 /* =========================
-   NAVBAR FIX (CLEAN + RESPONSIVE)
+   NAVBAR (CLEAN CENTERED GRID)
 ========================= */
 
 .navbar {
@@ -24,36 +24,36 @@ body {
   z-index: 1000;
 }
 
-/* main row layout */
 .navbar .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
 
-/* left: logo */
+/* logo (left) */
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  justify-self: start;
   white-space: nowrap;
 }
 
-/* center: nav links */
+/* nav links (center) */
 .nav-links {
   display: flex;
   gap: 1rem;
-  margin-left: auto;
-  margin-right: 1rem;
+  justify-self: center;
 }
 
-/* right: controls */
+/* right controls */
 .nav-controls {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-shrink: 0;
+  justify-self: end;
 }
 
-/* hamburger hidden on desktop */
+/* hamburger */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -61,42 +61,16 @@ body {
 }
 
 /* =========================
-   MOBILE NAV FIX
-========================= */
-
-@media (max-width: 768px) {
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 220px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,.15);
-    padding: 1rem;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  /* push nav links away from desktop layout assumptions */
-  .nav-links {
-    margin: 0;
-  }
-}
-
-/* =========================
    MOBILE NAV
 ========================= */
 
 @media (max-width: 768px) {
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .nav-links {
     display: none;
@@ -301,7 +275,7 @@ body.dark a {
 }
 
 /* =========================
-   THEME BUTTON (NO OVERLAP FIXED)
+   THEME BUTTON
 ========================= */
 
 .theme-toggle {
