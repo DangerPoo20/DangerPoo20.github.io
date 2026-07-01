@@ -75,13 +75,41 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
+
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
   .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: .6rem 0;
   }
 
   .menu-toggle {
     display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
+
 }
 /* Logo */
 
