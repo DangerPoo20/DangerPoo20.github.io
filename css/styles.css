@@ -358,3 +358,22 @@ footer {
 .article-page a:hover {
   text-decoration: underline;
 }
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* dark mode button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
