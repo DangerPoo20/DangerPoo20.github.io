@@ -392,3 +392,43 @@ footer {
   font-size: 1.3rem;
   cursor: pointer;
 }
+/* ===== DARK MODE ===== */
+
+body.dark {
+  background: #121212;
+  color: #eaeaea;
+}
+
+body.dark .navbar {
+  background: #1e1e1e;
+}
+
+body.dark .article-card {
+  background: #1e1e1e;
+  border-color: #333;
+}
+
+body.dark .hero,
+body.dark .newsletter {
+  background: #181818;
+}
+
+body.dark footer {
+  background: #0d0d0d;
+}
+
+body.dark a {
+  color: #7ab7ff;
+}
+
+/* Toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  padding: 0.5rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eee;
+}
