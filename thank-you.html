@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You - Why It Matters</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar (reuse from site) -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo">Why It Matters</div>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="future-tools.html">Future Tools</a>
+      </div>
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container thank-you">
+    <div class="message-wrapper">
+      <!-- Optional icon/emoticon -->
+      <div class="icon" aria-hidden="true">🎉</div>
+      
+      <h1>Thank you for subscribing!</h1>
+      <p>You’re now on the list for updates from Why It Matters.</p>
+      <a href="index.html" class="btn">Back to Home</a>
+    </div>
+  </main>
+
+  <!-- Optional: add some minimal CSS here if needed, or rely on existing styles -->
+  <style>
+    /* Center the content vertically and horizontally */
+    .thank-you {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 100px); /* adjust if header/footer height varies */
+      text-align: center;
+      padding: 1rem;
+    }
+    .message-wrapper {
+      max-width: 400px;
+    }
+    .icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    /* Use existing .btn styles for the button */
+  </style>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
