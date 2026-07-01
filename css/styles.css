@@ -13,7 +13,7 @@ body {
 }
 
 /* =========================
-   NAVBAR (FIXED CLEAN SYSTEM)
+   NAVBAR FIX (CLEAN + RESPONSIVE)
 ========================= */
 
 .navbar {
@@ -24,31 +24,33 @@ body {
   z-index: 1000;
 }
 
+/* main row layout */
 .navbar .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
 }
 
+/* left: logo */
 .logo {
-  text-decoration: none;
-  color: inherit;
   font-weight: bold;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
-/* right-side controls (hamburger + theme) */
+/* center: nav links */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+/* right: controls */
 .nav-controls {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-/* nav links desktop */
-.nav-links {
-  display: flex;
-  gap: 1rem;
+  flex-shrink: 0;
 }
 
 /* hamburger hidden on desktop */
@@ -56,6 +58,38 @@ body {
   display: none;
   font-size: 1.8rem;
   cursor: pointer;
+}
+
+/* =========================
+   MOBILE NAV FIX
+========================= */
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    padding: 1rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* push nav links away from desktop layout assumptions */
+  .nav-links {
+    margin: 0;
+  }
 }
 
 /* =========================
