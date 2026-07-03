@@ -27,7 +27,6 @@
 
   <main class="container contact-page">
 
-    <!-- Page Header -->
     <section class="page-header">
       <h1>Contact</h1>
       <p class="article-count">
@@ -35,7 +34,6 @@
       </p>
     </section>
 
-    <!-- Intro -->
     <section class="section">
       <p>
         This page is the primary way to contact Why It Matters for feedback, article suggestions,
@@ -43,7 +41,6 @@
       </p>
     </section>
 
-    <!-- Contact Info (email left as placeholder for now) -->
     <section class="section contact-info">
       <h2>Contact Information</h2>
 
@@ -57,7 +54,6 @@
       </p>
     </section>
 
-    <!-- Reasons to Contact -->
     <section class="section">
       <h2>Why You Might Contact Us</h2>
 
@@ -70,30 +66,36 @@
       </ul>
     </section>
 
-    <!-- Contact Form (visual only) -->
     <section class="section">
       <h2>Send a Message</h2>
 
-     <form class="contact-form" action="https://formsubmit.co/whyitmattersinquiries@gmail.com" method="POST">
+      <form class="contact-form"
+            action="https://formsubmit.co/whyitmattersinquiries@gmail.com"
+            method="POST">
+
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_subject" value="New Contact Form Message - Why It Matters">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://why-it-matters.org/thank-you.html">
 
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Your Name" />
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="your.email@example.com" />
+          <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
         </div>
 
         <div class="form-group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Subject" />
+          <input type="text" id="subject" name="subject" placeholder="Subject" required />
         </div>
 
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Your message"></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
         </div>
 
         <button type="submit" class="btn">Send Message</button>
@@ -101,37 +103,17 @@
       </form>
 
       <p class="note">
-        This form is for layout purposes only. Please use the email above for responses.
+        This form is now fully functional and will send messages directly to your email.
       </p>
-    </section>
-
-    <!-- Social Links -->
-    <section class="section socials-section">
-      <h2>Socials (Coming Soon)</h2>
-
-
-      </ul>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="container footer-content">
       <p>
         Research-based analysis of global issues. Designed for clarity and accessibility.
       </p>
-
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="articles.html">Articles</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="future-tools.html">Future Tools</a>
-      </nav>
-
-  
-      </div>
     </div>
   </footer>
 
