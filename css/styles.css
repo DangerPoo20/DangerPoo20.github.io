@@ -1,3 +1,7 @@
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: Georgia, serif;
@@ -168,7 +172,34 @@ body {
   color: inherit;
   display: block;
 }
+/* =========================
+   ARTICLE IMAGES
+========================= */
 
+.article-card img {
+  width: 100%;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+}
+
+.article-card {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.article-link {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .article-card img {
+    height: 180px;
+  }
+}
 /* =========================
    PLACEHOLDERS
 ========================= */
