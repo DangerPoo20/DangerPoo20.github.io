@@ -440,7 +440,6 @@ body.dark a {
 }
 
 /* DARK MODE */
-body.dark .thank-you-subscribe .message-wrapper,
 body.dark .thank-you-contact .message-wrapper {
   background: #1e1e1e;
   border-color: #333;
@@ -449,3 +448,4 @@ body.dark .thank-you-contact .message-wrapper {
 body.dark .thank-you-contact p,
 body.dark .thank-you-contact .small-note {
   color: #ccc;
+}
