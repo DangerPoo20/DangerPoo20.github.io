@@ -17,7 +17,7 @@ body {
 }
 
 /* =========================
-   NAVBAR (CLEAN CENTERED GRID)
+   NAVBAR 
 ========================= */
 
 .navbar {
@@ -173,31 +173,29 @@ body {
   display: block;
 }
 /* =========================
-   ARTICLE IMAGES
+   ARTICLE IMAGES hopefully mobile fixed
 ========================= */
 
 .article-card img {
   width: 100%;
-  max-width: 100%;
-  height: 220px;
+  height: auto;
+  max-height: 260px;
   object-fit: cover;
+  object-position: center;
   display: block;
   border-radius: 6px;
 }
 
+/* keeps cards from forcing weird overflow */
 .article-card {
   overflow: hidden;
   box-sizing: border-box;
 }
 
-.article-link {
-  display: block;
-  width: 100%;
-}
-
+/* responsive tweak for small phones */
 @media (max-width: 768px) {
   .article-card img {
-    height: 180px;
+    max-height: 200px;
   }
 }
 /* =========================
