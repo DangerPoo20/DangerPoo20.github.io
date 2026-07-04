@@ -366,88 +366,28 @@ body.dark a {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
-.thank-you h1 {
-  color: #0066cc;
-}
+
 .icon {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #0066cc;
 }
 
-/* override heading spacing just for this page */
+/* heading */
 .thank-you h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #0066cc;   /* THIS is the fix */
 }
 
+/* text */
 .thank-you p {
   margin-bottom: 2rem;
   font-size: 1.1rem;
   color: #555;
 }
 
-/* make sure button looks consistent */
+/* button consistency */
 .thank-you .btn {
   display: inline-block;
-}
-/* =========================
-   CONTACT THANK YOU PAGE
-========================= */
-
-.thank-you-contact {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 120px);
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.thank-you-contact .message-wrapper {
-  max-width: 500px;
-  padding: 2.5rem;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-.thank-you-contact .icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.thank-you-contact h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.thank-you-contact p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
-  color: #444;
-}
-
-.thank-you-contact .small-note {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 1.5rem;
-}
-
-.thank-you-contact .button-group {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-/* DARK MODE */
-body.dark .thank-you-contact .message-wrapper {
-  background: #1e1e1e;
-  border-color: #333;
-}
-
-body.dark .thank-you-contact p,
-body.dark .thank-you-contact .small-note {
-  color: #ccc;
 }
