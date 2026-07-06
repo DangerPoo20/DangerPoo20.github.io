@@ -393,3 +393,8 @@ body.dark a {
 .thank-you .btn {
   display: inline-block;
 }
+/* Keep badge text readable in dark mode */
+body.dark .badge.planning,
+body.dark .badge.concept {
+  color: #000;
+}
