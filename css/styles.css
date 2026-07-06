@@ -336,7 +336,9 @@ body.dark footer {
 body.dark a {
   color: #7ab7ff;
 }
-
+body.dark .logo {
+  color: #eaeaea;
+}
 /* =========================
    THEME BUTTON
 ========================= */
