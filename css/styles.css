@@ -398,3 +398,7 @@ body.dark .badge.planning,
 body.dark .badge.concept {
   color: #000;
 }
+.logo {
+  text-decoration: none;
+  color: inherit;
+}
