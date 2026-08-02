@@ -404,4 +404,33 @@ body.dark .badge.concept {
   text-decoration: none;
   color: inherit;
 }
-  
+/* =========================
+   SOURCES SECTION
+========================= */
+
+.sources-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #ddd;
+}
+
+.sources-section h2 {
+  margin-bottom: 1rem;
+  color: #0066cc;
+}
+
+.sources-section ul {
+  padding-left: 1.5rem;
+}
+
+.sources-section li {
+  margin-bottom: 0.75rem;
+}
+
+body.dark .sources-section {
+  border-color: #333;
+}
+
+body.dark .sources-section h2 {
+  color: #7ab7ff;
+}
